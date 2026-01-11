@@ -45,6 +45,7 @@ html {
 
 .toggle {
   color: grey;
+  cursor: pointer;
 }
 
 .toggle-left {
