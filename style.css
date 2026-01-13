@@ -41,13 +41,12 @@ html {
 .nav {
     flex-direction: row;
     justify-content: space-between;
-    padding-block: 1rem;
+    padding-block: 2rem;
 }
 
 .sticky {
     position: sticky;
     background-color: #fff;
-    padding-bottom: 0rem;
     top: 0;
 }
 
