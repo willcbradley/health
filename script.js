@@ -10,7 +10,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
         content[1].classList.remove('hidden') 
     }})
 
-
 toggles.forEach(toggle => {
     toggle.addEventListener('click', e => {
         const index = e.currentTarget.dataset.target
