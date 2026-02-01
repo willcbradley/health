@@ -19,6 +19,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+.back {
+    color: #979797;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .body {
     max-width: 540px;
     margin: 0 auto;
@@ -27,6 +33,10 @@ html {
 }
 
 .content {
+    margin-top: 2rem;
+}
+
+.essays {
     margin-top: 2rem;
 }
 
