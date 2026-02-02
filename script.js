@@ -1,5 +1,7 @@
 const toggles = document.querySelectorAll('.toggle');
 const content  = document.querySelectorAll('.content');
+const essayToggle = document.querySelector('.essay-toggle')
+const essayList = document.querySelector('.essay-list')
 
 window.addEventListener("DOMContentLoaded", (event) => {
     toggles.forEach(t => t.classList.remove('active'));
@@ -39,5 +41,13 @@ window.addEventListener('keydown', e => {
 
         toggles[0].classList.add('active')
         content[0].classList.remove('hidden') 
+    }
+})
+
+essayToggle.addEventListener('click', () => {
+    if (essayList.classList.contains('hidden')) {
+        essayList.classList.remove('hidden')
+    } else {
+        essayList.classList.add('hidden')
     }
 })

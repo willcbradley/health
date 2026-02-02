@@ -41,6 +41,15 @@ html {
     margin-top: 2rem;
 }
 
+.essay-list {
+    margin-top: 8px;
+}
+
+.essay-toggle {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .flex {
     display: flex;
 }
