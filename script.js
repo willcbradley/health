@@ -14,7 +14,8 @@ const fundamentals = [
 ]
 
 const fieldmanual = [
-    "i2"
+    "i2",
+    "d"
 ]
 
 if (toggles && content && fundamentalsToggle && fundamentalsList) {
