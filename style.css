@@ -33,6 +33,12 @@ html {
     min-height: 100vh;
 }
 
+.code { 
+  white-space: pre-wrap;    
+  word-wrap: break-word;   
+  overflow-wrap: break-word;
+}
+
 .content {
     margin-top: 2rem;
 }
@@ -76,6 +82,10 @@ html {
 .footer-button {
     text-decoration: none;
     color: #979797;
+}
+
+.git {
+    justify-content: space-between;
 }
 
 .grey {
