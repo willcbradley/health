@@ -2,21 +2,14 @@ const toggles = document.querySelectorAll('.toggle');
 const content  = document.querySelectorAll('.content');
 const fundamentalsToggle = document.querySelector('.fundamentals-toggle')
 const fundamentalsList = document.querySelector('.fundamentals-list')
-const fieldmanualToggle = document.querySelector('.fieldmanual-toggle')
-const fieldmanualList = document.querySelector('.fieldmanual-list')
 const pageName = window.location.pathname.slice(1)
 
 const fundamentals = [
     "i",
     "m",
     "n",
-    "b"
-]
-
-const fieldmanual = [
-    "i2",
+    "b",
     "d",
-    "c",
     "p"
 ]
 
@@ -70,14 +63,6 @@ if (toggles && content && fundamentalsToggle && fundamentalsList) {
             fundamentalsList.classList.add('hidden')
         }
     })
-
-    fieldmanualToggle.addEventListener('click', () => {
-        if (fieldmanualList.classList.contains('hidden')) {
-            fieldmanualList.classList.remove('hidden')
-        } else {
-            fieldmanualList.classList.add('hidden')
-        }
-    })
 }
 
 if (fundamentals.includes(pageName)) {
@@ -91,21 +76,6 @@ if (fundamentals.includes(pageName)) {
 
         if (e.key === "ArrowLeft" && essayIndex > 0) {
             window.location.href = fundamentals[essayIndex - 1]
-        }
-    })
-}
-
-if (fieldmanual.includes(pageName)) {
-    window.addEventListener("keydown", e => {
-        const essayIndex = fieldmanual.indexOf(pageName)
-
-        if (e.key === "ArrowRight" && essayIndex < fieldmanual.length - 1) {
-            window.location.href = fieldmanual[essayIndex + 1]
-            console.log("moving to the right")
-        }
-
-        if (e.key === "ArrowLeft" && essayIndex > 0) {
-            window.location.href = fieldmanual[essayIndex - 1]
         }
     })
 }
