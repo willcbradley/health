@@ -10,6 +10,7 @@ const fundamentals = [
     "n",
     "b",
     "d",
+    "c",
     "p"
 ]
 
