@@ -51,6 +51,7 @@ html {
 .fundamentals-list,
 .fieldmanual-list {
     margin-top: 8px;
+    margin-left: 2rem;
 }
 
 .fundamentals-toggle,
