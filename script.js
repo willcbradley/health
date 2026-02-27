@@ -15,8 +15,7 @@ const fundamentals = [
 ]
 
 // check if on homepage
-if (toggles && content && fundamentalsToggle && fundamentalsList) {
-
+if (toggles && content)  {
     window.addEventListener("DOMContentLoaded", (event) => {
         toggles.forEach(t => t.classList.remove('active'));
         content.forEach(c => c.classList.add('hidden'));
@@ -57,14 +56,6 @@ if (toggles && content && fundamentalsToggle && fundamentalsList) {
             content[index].classList.remove('hidden')
         })
     })
-
-    fundamentalsToggle.addEventListener('click', () => {
-        if (fundamentalsList.classList.contains('hidden')) {
-            fundamentalsList.classList.remove('hidden')
-        } else {
-            fundamentalsList.classList.add('hidden')
-        }
-    })
 }
 
 // check if on fundamentals page
@@ -85,12 +76,12 @@ if (fundamentals.includes(pageName)) {
 
 // else
 document.addEventListener('click', function (e) {
-    const toggle = e.target.closest('[data-toggle]');
-    if (!toggle) return;
+    const vistoggle = e.target.closest('[data-toggle]');
+    if (!vistoggle) return;
 
     e.preventDefault();
 
-    const group = toggle.closest('.toggle-group');
+    const group = vistoggle.closest('.toggle-group');
     if (group) {
         group.classList.toggle('active');
     }

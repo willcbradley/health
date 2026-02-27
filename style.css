@@ -43,6 +43,11 @@ html {
     margin-top: 2rem;
 }
 
+.dropdown {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .essays,
 .essay {
     margin-top: 2rem;
