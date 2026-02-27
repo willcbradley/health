@@ -118,8 +118,17 @@ html {
 }
 
 .toggle {
-  color: #979797;
   cursor: pointer;
+}
+
+.toggle-content {
+  display: none;
+  margin-left: 2rem;
+  margin-top: 8px;
+}
+
+.toggle-group.active .toggle-content {
+  display: block;
 }
 
 .toggle-left {

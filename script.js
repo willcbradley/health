@@ -14,6 +14,7 @@ const fundamentals = [
     "p"
 ]
 
+// check if on homepage
 if (toggles && content && fundamentalsToggle && fundamentalsList) {
 
     window.addEventListener("DOMContentLoaded", (event) => {
@@ -66,6 +67,7 @@ if (toggles && content && fundamentalsToggle && fundamentalsList) {
     })
 }
 
+// check if on fundamentals page
 if (fundamentals.includes(pageName)) {
     window.addEventListener("keydown", e => {
         const essayIndex = fundamentals.indexOf(pageName)
@@ -80,3 +82,16 @@ if (fundamentals.includes(pageName)) {
         }
     })
 }
+
+// else
+document.addEventListener('click', function (e) {
+    const toggle = e.target.closest('[data-toggle]');
+    if (!toggle) return;
+
+    e.preventDefault();
+
+    const group = toggle.closest('.toggle-group');
+    if (group) {
+        group.classList.toggle('active');
+    }
+});
