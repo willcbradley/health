@@ -13,7 +13,7 @@ const fundamentals = [
     "s",
     "f",
     "a",
-    "4",
+    "r",
     "y"
 ]
 
