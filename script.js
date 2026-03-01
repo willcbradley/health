@@ -48,6 +48,8 @@ if (toggles && content)  {
 
             toggles[1].classList.add('active')
             content[1].classList.remove('hidden') 
+        
+            window.scrollTo(0,0);
         }
 
         if (e.key == 'ArrowLeft' && content[0].classList.contains('hidden')) {
@@ -56,6 +58,8 @@ if (toggles && content)  {
 
             toggles[0].classList.add('active')
             content[0].classList.remove('hidden') 
+
+            window.scrollTo(0,0);
         }
     })
 

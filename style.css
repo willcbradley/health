@@ -51,10 +51,6 @@ html {
   overflow-wrap: break-word;
 }
 
-.content {
-    margin-top: 2rem;
-}
-
 .dropdown {
     cursor: pointer;
 }
@@ -103,7 +99,7 @@ html {
 }
 
 .index-nav {
-    padding-top: 2rem;
+    padding-block: 2rem;
 }
 
 .invis {
