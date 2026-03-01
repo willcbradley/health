@@ -1,6 +1,8 @@
 const toggles = document.querySelectorAll('.toggle');
 const content = document.querySelectorAll('.content');
-const pageName = window.location.pathname.slice(1)
+const pageName = window.location.pathname.slice(1);
+const archiveList = document.getElementById("archive");
+const fundamentalsList = document.getElementById("fundamentals");
 
 const fundamentals = [
     "i",
@@ -25,7 +27,16 @@ if (toggles && content)  {
         if (window.location.hash === "#p") {
             toggles[1].classList.add('active')
             content[1].classList.remove('hidden') 
-        } else {
+        } else if (window.location.hash === "#a") {
+            toggles[1].classList.add('active')
+            content[1].classList.remove('hidden') 
+            archiveList.classList.add('active')
+        } else if (window.location.hash === "#f") {
+            toggles[1].classList.add('active')
+            content[1].classList.remove('hidden') 
+            fundamentalsList.classList.add('active')
+        }
+        else {
             toggles[0].classList.add('active')
             content[0].classList.remove('hidden')
     }})
