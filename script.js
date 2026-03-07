@@ -19,6 +19,12 @@ const fundamentals = [
     "y"
 ]
 
+const archive = [
+    "0",
+    "1",
+    "2"
+]
+
 // check if on homepage
 if (toggles && content)  {
     window.addEventListener("DOMContentLoaded", (event) => {
@@ -35,8 +41,7 @@ if (toggles && content)  {
             toggles[1].classList.add('active')
             content[1].classList.remove('hidden') 
             fundamentalsList.classList.add('active')
-        }
-        else {
+        } else {
             toggles[0].classList.add('active')
             content[0].classList.remove('hidden')
     }})
@@ -85,7 +90,6 @@ if (fundamentals.includes(pageName)) {
 
         if (e.key === "ArrowRight" && essayIndex < fundamentals.length - 1) {
             window.location.href = fundamentals[essayIndex + 1]
-            console.log("moving to the right")
         }
 
         if (e.key === "ArrowLeft" && essayIndex > 0) {
@@ -94,7 +98,23 @@ if (fundamentals.includes(pageName)) {
     })
 }
 
-// else
+// check if on archive page
+if (archive.includes[pageName]) {
+    window.addEventListener("keydown", e => {
+
+        const essayIndex = archive.indexOf(pageName)
+
+        if (e.key === "ArrowRight" && essayIndex < archive.length - 1) {
+            window.location.href = archive[essayIndex + 1]
+        }
+
+        if (e.key === "ArrowLeft" && essayIndex > 0) {
+            window.location.href = archive[essayIndex - 1]
+        }
+    })
+}
+
+// everywhere
 document.addEventListener('click', function (e) {
     const vistoggle = e.target.closest('[data-toggle]');
     if (!vistoggle) return;
