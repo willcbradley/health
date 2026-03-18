@@ -6,7 +6,7 @@ const fundamentalsList = document.getElementById("fundamentals");
 
 const fundamentals = []
 
-for (i = 0; i <= 11; i++) {
+for (i = 0; i <= 15; i++) {
     fundamentals.push(`${i}`)
 }
 
