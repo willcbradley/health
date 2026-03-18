@@ -4,26 +4,17 @@ const pageName = window.location.pathname.slice(1);
 const archiveList = document.getElementById("archive");
 const fundamentalsList = document.getElementById("fundamentals");
 
-const fundamentals = [
-    "i",
-    "m",
-    "n",
-    "b",
-    "d",
-    "c",
-    "p",
-    "s",
-    "f",
-    "a",
-    "r",
-    "y"
-]
+const fundamentals = []
 
-const archive = [
-    "0",
-    "1",
-    "2"
-]
+for (i = 0; i <= 11; i++) {
+    fundamentals.push(`${i}`)
+}
+
+const archive = []
+
+for (i = 0; i <= 2; i++) {
+    archive.push(`a${i}`)
+}
 
 // check if on homepage
 if (toggles && content)  {
