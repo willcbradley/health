@@ -61,6 +61,10 @@ html {
     grid-column: 2/6;
 }
 
+.divider {
+    margin-block: 1.75rem;
+}
+
 .dropdown {
     cursor: pointer;
 }
