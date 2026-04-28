@@ -12,7 +12,7 @@ for (i = 0; i <= 15; i++) {
 
 const archive = []
 
-for (i = 0; i <= 5; i++) {
+for (i = 0; i <= 10; i++) {
     archive.push(`a${i}`)
 }
 
